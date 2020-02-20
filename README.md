@@ -19,5 +19,10 @@ git push heroku master
 username: <anyString>
 password: <API KEY from my heroku account>
 
+Adding new feature workflow:
+1. Write new feature
+2. Test it with jest
+3. Push it to GitHub and Heroku
+
 
 
