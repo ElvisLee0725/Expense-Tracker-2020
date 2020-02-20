@@ -10,7 +10,7 @@ module.exports = (env) => {
         entry: './src/app.js',
         // Output - Where to output file
         output: {
-            path: path.join(__dirname, 'public'),
+            path: path.join(__dirname, 'public', 'dist'),
             filename: 'bundle.js'
         },
         // Module rules - Define what to do when certain file is loaded
@@ -48,7 +48,8 @@ module.exports = (env) => {
         // DevServer - This is a server designed for webpack. contentBase need the absolute path of /public
         devServer: {
             contentBase: path.join(__dirname, 'public'),
-            historyApiFallback: true    // To use the client side routing with react-router-dom, we need this
+            historyApiFallback: true,    // To use the client side routing with react-router-dom, we need this
+            publicPath: '/dist/'        // Add a path to dist folder since 'output' has the dist folder under public
         }
     };
 }

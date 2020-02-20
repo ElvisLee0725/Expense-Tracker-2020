@@ -5,7 +5,6 @@
   "author": "Elvis Lee",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
     "build:dev": "webpack",
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
@@ -19,13 +18,9 @@
     "babel-preset-env": "1.5.2",
     "babel-preset-react": "6.24.1",
     "css-loader": "^3.4.2",
-    "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.2",
-    "enzyme-to-json": "^3.4.4",
     "express": "^4.17.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jquery": "^3.4.1",
-    "live-server": "^1.2.1",
     "moment": "^2.24.0",
     "node-sass": "^4.13.1",
     "normalize.css": "^8.0.1",
@@ -37,14 +32,12 @@
     "react-modal": "^2.2.2",
     "react-redux": "^7.1.3",
     "react-router-dom": "^5.1.2",
-    "react-test-renderer": "^16.12.0",
     "redux": "^4.0.5",
     "sass-loader": "^6.0.6",
     "style-loader": "^1.1.3",
     "uuid": "^3.4.0",
     "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11",
-    "webpack-dev-server": "^3.10.3"
+    "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
@@ -54,6 +47,11 @@
     "@babel/preset-react": "^7.8.3",
     "babel-core": "^7.0.0-bridge.0",
     "babel-loader": "^7.1.5",
-    "jest": "^25.1.0"
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "jest": "^25.1.0",
+    "react-test-renderer": "^16.12.0",
+    "webpack-dev-server": "^3.10.3"
   }
 }
