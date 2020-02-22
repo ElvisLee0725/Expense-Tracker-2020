@@ -3,6 +3,7 @@ public/bundle.js
 public/bundle.js.map
 public/styles.css
 public/styles.css.map
+firebase/firebase.js
 
 .DS_Store
 .vscode
