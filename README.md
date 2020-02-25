@@ -6,7 +6,7 @@ npm run build:prod
 npm start
 
 Test:
-npm test -- --watch
+npm test -- --watchAll
 npm test -- -u  // Update the snapshot and run test
 
 Heroku:
@@ -23,6 +23,10 @@ Adding new feature workflow:
 1. Write new feature
 2. Test it with jest
 3. Push it to GitHub and Heroku
+
+Separate test and development database:
+Use .env.test and .env.development to define the environmental variables for Firebase
+
 
 
 
