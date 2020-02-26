@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import $ from 'jquery';
 import AppRouter from './routers/AppRouter';
 import configureStore from './store/configureStore';
+import { startSetExpenses } from './actions/expenses';
 import 'normalize.css/normalize.css';
 import './styles/styles.scss';
 import 'react-dates/lib/css/_datepicker.css'; // Style for react-dates
@@ -17,4 +18,9 @@ const jsx = (
     </Provider>
 );
 
-ReactDOM.render(jsx, $('#app')[0]);
+ReactDOM.render(<p>Loading...</p>, $('#app')[0]);
+
+store.dispatch(startSetExpenses()).then(() => {
+    ReactDOM.render(jsx, $('#app')[0]);
+});
+
